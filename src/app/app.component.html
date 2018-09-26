@@ -1,14 +1,28 @@
-<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-toolbar color="primary">
+    <button (click)="sidenav.toggle()" mat-mini-fab><mat-icon>menu</mat-icon></button>
+    <span>
+     <h2>sdfsdfdsfds</h2>
+    </span>
+  </mat-toolbar>
+  <mat-sidenav-container>
+      <mat-sidenav #sidenav mode="side" class="app-sidenav">
+        <nav>
+          <a mat-button
+             class="nav-link"
+             *ngFor="let link of links">
 
 
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+            <mat-icon>{{link.icon}}</mat-icon>
+            {{link.label}}
+          </a>
+        </nav>
+      </mat-sidenav>
+<mat-card>
+    <app-designs></app-designs>
+    <app-designs></app-designs>
+    <app-designs></app-designs>
+    <app-designs></app-designs>
+    <app-designs></app-designs>
+</mat-card>
 
-  <app-design-lista></app-design-lista>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<mat-icon matListIcon class="mat-18" color="primary">
-    ligature
-</mat-icon>
