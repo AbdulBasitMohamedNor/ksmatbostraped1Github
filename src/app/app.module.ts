@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DesignListaComponent } from './Designs/design-lista/design-lista.component';
 import { DesignDetailComponent } from './Designs/design-detail/design-detail.component';
 import { DesignsComponent } from './Designs/designs.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DesignsComponent } from './Designs/designs.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
